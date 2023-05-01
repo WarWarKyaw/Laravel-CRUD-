@@ -49,7 +49,7 @@ class PizzaController extends Controller
         $pizza=pizza::findOrFail($id);
         $pizza->delete();
 
-        return redirect('/pizzas');
+        return redirect('/orders/pizzas');
 
 
     }
